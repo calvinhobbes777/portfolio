@@ -1,0 +1,26 @@
+body {
+  background: linear-gradient(
+    to right,
+    rgba(33, 145, 13, 1),
+    rgba(7, 33, 3, 0.93)
+  );
+}
+
+h1,
+h2 {
+  font-size: 2em;
+  font-family: "Rye", cursive !important;
+  text-shadow: -1px 1px 1px rgb(206, 161, 206);
+}
+
+h3 {
+  font-family: "Rye", cursive !important;
+  text-shadow: -1px 1px 1px rgb(206, 161, 206);
+}
+
+p {
+  font-family: "Crimson Text", serif;
+  font-size: 25px;
+  color: rgb(206, 161, 206);
+  text-shadow: -1px 1px 1px black;
+}
