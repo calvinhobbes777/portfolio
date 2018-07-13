@@ -11,7 +11,7 @@ class ProfileHeader extends Component {
         <h1>Calvin Rafferty</h1>
         <HR />
         <h3>Junior Software Engineer</h3>
-        <div>
+        <Social>
           <a href="https://www.facebook.com/zombeard7">
             <Image src="/image/social/face.png" alt="facebook" />
           </a>
@@ -24,7 +24,10 @@ class ProfileHeader extends Component {
           <a href="https://twitter.com/zombeard777?lang=en">
             <Image src="/image/social/twit.png" alt="twitter" />
           </a>
-        </div>
+          <a href="https://codepen.io/calvinhobbes/">
+            <CodeImage src="/image/social/codepen.png" alt="codepen" />
+          </a>
+        </Social>
       </Box>
     );
   }
@@ -34,7 +37,16 @@ const Box = glamorous.div({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  paddingTop: "60px"
+  width: "100%",
+  maxWidth: "500px",
+  margin: "0px auto"
+});
+
+const Social = glamorous.div({
+  marginLeft: "88px",
+  "@media(max-width: 326px)": {
+    marginLeft: "-5px"
+  }
 });
 
 const Img = glamorous.img({
@@ -54,6 +66,13 @@ const HR = glamorous.hr({
 });
 
 const Image = glamorous.img({
+  ":hover": {
+    filter: "invert(100%)"
+  }
+});
+
+const CodeImage = glamorous.img({
+  width: "14%",
   ":hover": {
     filter: "invert(100%)"
   }
