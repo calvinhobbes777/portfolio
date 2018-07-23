@@ -46,7 +46,8 @@ class Bio extends Component {
             style={{
               color: "black"
             }}
-            href="/Calvin's Resume.pdf"
+            href="/CalvinResume.pdf"
+            download
           >
             resume.
           </a>
